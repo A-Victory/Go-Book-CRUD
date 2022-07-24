@@ -11,7 +11,7 @@ var (
 )
 
 //Connect func help us connect to our database
-//
+//The SQL uses name and password is from Akhil Sharma, check out his Videos on YouTube!!
 func Connect() {
 	d, err := gorm.Open("mysql", "akhil:Axlesharma@12@/simplest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
