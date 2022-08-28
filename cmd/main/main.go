@@ -14,7 +14,7 @@ func main() {
 	r := mux.NewRouter()
 	routes.ResgisterBookstoreRoutes(r)
 	http.Handle("/", r)
-	fmt.Println("Starting server at port 9010")
-	log.Fatal(http.ListenAndServe("localhost:9010", r))
+	fmt.Println("Starting server at port 8080")
+	log.Fatal(http.ListenAndServe("localhost:8080", r))
 
 }
