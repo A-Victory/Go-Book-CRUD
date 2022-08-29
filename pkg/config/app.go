@@ -14,7 +14,7 @@ var (
 // The SQL username is connected to an amazon web(aws) instance for mysql
 
 func Connect() {
-	d, err := gorm.Open("mysql", "Master:Iamthebest!@tcp(ec2-18-185-125-16.eu-central-1.compute.amazonaws.com:3306)/test03?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "admin:mypassword@tcp(database-2.c7jtdbiq3jv9.eu-central-1.rds.amazonaws.com:3306)/test1?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
